@@ -73,32 +73,24 @@
             this.kryptonLabel1.Name = "kryptonLabel1";
             this.kryptonLabel1.Size = new System.Drawing.Size(572, 69);
             this.kryptonLabel1.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.kryptonLabel1.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
-            this.kryptonLabel1.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.kryptonLabel1.TabIndex = 0;
             this.kryptonLabel1.Values.Text = "IMG-to-PDF Converter";
             // 
             // kryptonLabel2
             // 
-            this.kryptonLabel2.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.kryptonLabel2.Location = new System.Drawing.Point(156, 132);
             this.kryptonLabel2.Name = "kryptonLabel2";
             this.kryptonLabel2.Size = new System.Drawing.Size(218, 40);
             this.kryptonLabel2.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.kryptonLabel2.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
-            this.kryptonLabel2.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.kryptonLabel2.TabIndex = 1;
             this.kryptonLabel2.Values.Text = "Đường dẫn tệp";
             // 
             // kryptonLabel3
             // 
-            this.kryptonLabel3.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.kryptonLabel3.Location = new System.Drawing.Point(38, 42);
             this.kryptonLabel3.Name = "kryptonLabel3";
             this.kryptonLabel3.Size = new System.Drawing.Size(336, 40);
             this.kryptonLabel3.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.kryptonLabel3.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
-            this.kryptonLabel3.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.kryptonLabel3.TabIndex = 2;
             this.kryptonLabel3.Values.Text = "Tên tệp sau chuyển đổi";
             // 
@@ -109,13 +101,10 @@
             this.btn_ChuyenDoi.Name = "btn_ChuyenDoi";
             this.btn_ChuyenDoi.Size = new System.Drawing.Size(316, 122);
             this.btn_ChuyenDoi.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.btn_ChuyenDoi.StateCommon.Content.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
-            this.btn_ChuyenDoi.StateCommon.Content.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.btn_ChuyenDoi.TabIndex = 3;
             this.btn_ChuyenDoi.ToolTipValues.Description = "Bắt đầu chuyển đổi (các) tệp hình ảnh sang PDF";
             this.btn_ChuyenDoi.ToolTipValues.EnableToolTips = true;
             this.btn_ChuyenDoi.ToolTipValues.Heading = "Chú thích";
-            this.btn_ChuyenDoi.ToolTipValues.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             this.btn_ChuyenDoi.Values.Image = global::IMG_to_PDF_Converter.Properties.Resources.submit;
             this.btn_ChuyenDoi.Values.Text = "&Chuyển đổi";
             this.btn_ChuyenDoi.Click += new System.EventHandler(this.btn_chuyenDoi_Click);
@@ -127,13 +116,10 @@
             this.btn_LamLai.Name = "btn_LamLai";
             this.btn_LamLai.Size = new System.Drawing.Size(316, 122);
             this.btn_LamLai.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.btn_LamLai.StateCommon.Content.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
-            this.btn_LamLai.StateCommon.Content.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.btn_LamLai.TabIndex = 4;
             this.btn_LamLai.ToolTipValues.Description = "Thực hiện Reset tất cả tham số đầu vào";
             this.btn_LamLai.ToolTipValues.EnableToolTips = true;
             this.btn_LamLai.ToolTipValues.Heading = "Chú thích";
-            this.btn_LamLai.ToolTipValues.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             this.btn_LamLai.Values.Image = ((System.Drawing.Image)(resources.GetObject("btn_LamLai.Values.Image")));
             this.btn_LamLai.Values.Text = "&Làm lại";
             this.btn_LamLai.Click += new System.EventHandler(this.btn_lamLai_Click);
@@ -145,13 +131,10 @@
             this.btn_Thoat.Name = "btn_Thoat";
             this.btn_Thoat.Size = new System.Drawing.Size(316, 122);
             this.btn_Thoat.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.btn_Thoat.StateCommon.Content.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
-            this.btn_Thoat.StateCommon.Content.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.btn_Thoat.TabIndex = 5;
             this.btn_Thoat.ToolTipValues.Description = "Thoát khỏi chương trình";
             this.btn_Thoat.ToolTipValues.EnableToolTips = true;
             this.btn_Thoat.ToolTipValues.Heading = "Chú thích";
-            this.btn_Thoat.ToolTipValues.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             this.btn_Thoat.Values.Image = global::IMG_to_PDF_Converter.Properties.Resources.exit;
             this.btn_Thoat.Values.Text = "&Thoát";
             this.btn_Thoat.Click += new System.EventHandler(this.btn_thoatChuongTrinh_Click);
@@ -203,13 +186,10 @@
             // 
             // kryptonLabel4
             // 
-            this.kryptonLabel4.LabelStyle = Krypton.Toolkit.LabelStyle.NormalPanel;
             this.kryptonLabel4.Location = new System.Drawing.Point(195, 222);
             this.kryptonLabel4.Name = "kryptonLabel4";
             this.kryptonLabel4.Size = new System.Drawing.Size(179, 40);
             this.kryptonLabel4.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.kryptonLabel4.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
-            this.kryptonLabel4.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.kryptonLabel4.TabIndex = 10;
             this.kryptonLabel4.Values.Text = "Vị trí lưu tệp";
             // 
@@ -253,9 +233,6 @@
             // 
             // kryptonGroupBox1
             // 
-            this.kryptonGroupBox1.CaptionStyle = Krypton.Toolkit.LabelStyle.GroupBoxCaption;
-            this.kryptonGroupBox1.GroupBackStyle = Krypton.Toolkit.PaletteBackStyle.ControlGroupBox;
-            this.kryptonGroupBox1.GroupBorderStyle = Krypton.Toolkit.PaletteBorderStyle.ControlGroupBox;
             this.kryptonGroupBox1.Location = new System.Drawing.Point(45, 291);
             this.kryptonGroupBox1.Name = "kryptonGroupBox1";
             // 
@@ -291,13 +268,10 @@
             this.chkBox_NenZip.Name = "chkBox_NenZip";
             this.chkBox_NenZip.Size = new System.Drawing.Size(284, 40);
             this.chkBox_NenZip.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.chkBox_NenZip.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
-            this.chkBox_NenZip.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.chkBox_NenZip.TabIndex = 21;
             this.chkBox_NenZip.ToolTipValues.Description = "Thực hiện nén (các) tệp gốc sau khi hoàn tất";
             this.chkBox_NenZip.ToolTipValues.EnableToolTips = true;
             this.chkBox_NenZip.ToolTipValues.Heading = "Chú thích";
-            this.chkBox_NenZip.ToolTipValues.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             this.chkBox_NenZip.Values.Text = "Nén tệp gốc (*.zip)";
             // 
             // num_TatMay
@@ -329,13 +303,10 @@
             this.chkBox_TatMay.Name = "chkBox_TatMay";
             this.chkBox_TatMay.Size = new System.Drawing.Size(199, 40);
             this.chkBox_TatMay.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.chkBox_TatMay.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
-            this.chkBox_TatMay.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.chkBox_TatMay.TabIndex = 18;
             this.chkBox_TatMay.ToolTipValues.Description = "Thực hiện tắt máy sau \"n\" giờ/phút/giây sau khi hoàn thành";
             this.chkBox_TatMay.ToolTipValues.EnableToolTips = true;
             this.chkBox_TatMay.ToolTipValues.Heading = "Chú thích";
-            this.chkBox_TatMay.ToolTipValues.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             this.chkBox_TatMay.Values.Text = "Tắt máy sau ";
             // 
             // chkBox_XoaTepGoc
@@ -345,13 +316,10 @@
             this.chkBox_XoaTepGoc.Name = "chkBox_XoaTepGoc";
             this.chkBox_XoaTepGoc.Size = new System.Drawing.Size(194, 40);
             this.chkBox_XoaTepGoc.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.chkBox_XoaTepGoc.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
-            this.chkBox_XoaTepGoc.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.chkBox_XoaTepGoc.TabIndex = 16;
             this.chkBox_XoaTepGoc.ToolTipValues.Description = "Xóa (các) tệp gốc sau khi hoàn tất";
             this.chkBox_XoaTepGoc.ToolTipValues.EnableToolTips = true;
             this.chkBox_XoaTepGoc.ToolTipValues.Heading = "Chú thích";
-            this.chkBox_XoaTepGoc.ToolTipValues.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             this.chkBox_XoaTepGoc.Values.Text = "Xóa tệp gốc";
             this.chkBox_XoaTepGoc.CheckedChanged += new System.EventHandler(this.chkBox_XoaTepGoc_CheckedChanged);
             // 
@@ -364,13 +332,10 @@
             this.chkBox_GhiDe.Name = "chkBox_GhiDe";
             this.chkBox_GhiDe.Size = new System.Drawing.Size(306, 40);
             this.chkBox_GhiDe.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.chkBox_GhiDe.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
-            this.chkBox_GhiDe.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.chkBox_GhiDe.TabIndex = 15;
             this.chkBox_GhiDe.ToolTipValues.Description = "Ghi đề tệp đã tồn tại tại \"Vị trí lưu tệp\"";
             this.chkBox_GhiDe.ToolTipValues.EnableToolTips = true;
             this.chkBox_GhiDe.ToolTipValues.Heading = "Chú thích";
-            this.chkBox_GhiDe.ToolTipValues.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             this.chkBox_GhiDe.Values.Text = "Ghi đè tệp đã tồn tại";
             // 
             // chkBox_OpenFolder
@@ -382,14 +347,11 @@
             this.chkBox_OpenFolder.Name = "chkBox_OpenFolder";
             this.chkBox_OpenFolder.Size = new System.Drawing.Size(255, 40);
             this.chkBox_OpenFolder.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.chkBox_OpenFolder.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
-            this.chkBox_OpenFolder.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.chkBox_OpenFolder.TabIndex = 13;
             this.chkBox_OpenFolder.ToolTipValues.Description = "Tự động mở thư mục đích (được định nghĩa trên trường \"Vị trí lưu tệp\") khi hoàn t" +
     "ất";
             this.chkBox_OpenFolder.ToolTipValues.EnableToolTips = true;
             this.chkBox_OpenFolder.ToolTipValues.Heading = "Chú thích";
-            this.chkBox_OpenFolder.ToolTipValues.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             this.chkBox_OpenFolder.Values.Text = "Mở thư mục đích";
             // 
             // chkBox_Reset
@@ -401,13 +363,10 @@
             this.chkBox_Reset.Name = "chkBox_Reset";
             this.chkBox_Reset.Size = new System.Drawing.Size(240, 40);
             this.chkBox_Reset.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.chkBox_Reset.StateCommon.ShortText.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Inherit;
-            this.chkBox_Reset.StateCommon.ShortText.Trim = Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.chkBox_Reset.TabIndex = 14;
             this.chkBox_Reset.ToolTipValues.Description = "Tự động nhấn nút \"Làm lại\" sau khi hoàn tất";
             this.chkBox_Reset.ToolTipValues.EnableToolTips = true;
             this.chkBox_Reset.ToolTipValues.Heading = "Chú thích";
-            this.chkBox_Reset.ToolTipValues.ToolTipStyle = Krypton.Toolkit.LabelStyle.SuperTip;
             this.chkBox_Reset.Values.Text = "Tự động làm lại";
             // 
             // txt_SaveFile

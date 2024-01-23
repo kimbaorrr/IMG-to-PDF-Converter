@@ -3,7 +3,6 @@ using Krypton.Toolkit;
 using System;
 using System.Diagnostics;
 using System.IO;
-using System.Linq;
 using System.Windows.Forms;
 
 namespace IMG_to_PDF_Converter
@@ -50,36 +49,27 @@ namespace IMG_to_PDF_Converter
 
         private void btn_chuyenDoi_Click(object sender, EventArgs e)
         {
-            // Check mảng fileName trước khi Convert
-            if (this.fileNames == null)
+            ChuyenDoi a = new ChuyenDoi()
             {
-                this.thongBao("Vui lòng thêm các tệp trước khi bấm Chuyển đổi !", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                this.btn_LamLai.PerformClick();
-            } else
+                Do_Dai_Mang = this.fileNames.Length,
+                DS_Tep = this.fileNames,
+                TenTepSauCD = this.txt_Name.Text,
+                Duong_Dan_Luu_Tep = this.txt_ViTriLuuTep.Text
+            };
+            if (this.chkBox_GhiDe.Checked)
+                a.GhiDeTep = true;
+            a.chuyenDoi_Tep_PDF();
+            Cursor.Current = Cursors.WaitCursor;
+            if (a.ThongBao.Item2)
             {
-                ChuyenDoi a = new ChuyenDoi()
-                {
-                    Do_Dai_Mang = this.fileNames.Length,
-                    DS_Tep = this.fileNames,
-                    TenTepSauCD = this.txt_Name.Text,
-                    Duong_Dan_Luu_Tep = this.txt_ViTriLuuTep.Text
-                };
-                if (this.chkBox_GhiDe.Checked)
-                    a.GhiDeTep = true;
-                a.chuyenDoi_Tep_PDF();
-                Cursor.Current = Cursors.WaitCursor;
-                if (a.ThongBao.Item2)
-                {
-                    this.thongBao(a.ThongBao.Item1, MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    Cursor.Current = Cursors.Default;
-                }
-                else
-                {
-                    this.thongBao(a.ThongBao.Item1, MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-                this.tuyChon();
+                this.thongBao(a.ThongBao.Item1, MessageBoxButtons.OK, MessageBoxIcon.Information);
+                Cursor.Current = Cursors.Default;
             }
-            
+            else
+            {
+                this.thongBao(a.ThongBao.Item1, MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            this.tuyChon();
         }
 
         private void btn_lamLai_Click(object sender, EventArgs e)
@@ -158,10 +148,25 @@ namespace IMG_to_PDF_Converter
                 ChuyenDoi.log_errors(ex.Message);
             }
         }
+        /// <summary>
+        /// Xuất bảng thông báo cho người dùng
+        /// </summary>
+        /// <param name="message">Nội dung</param>
+        /// <param name="button">Nút</param>
+        /// <param name="icon">Biểu tượng</param>
+        /// <returns></returns>
         private DialogResult thongBao(string message, MessageBoxButtons button, MessageBoxIcon icon) =>
             MessageBox.Show(message, "Thông báo", button, icon);
+        /// <summary>
+        /// Kiểm tra điều kiện các biến có NULL không ?
+        /// </summary>
+        /// <returns></returns>
         private bool chk_NULL()
-            => !string.IsNullOrEmpty(this.txt_Name.Text);
+        {
+            if (!string.IsNullOrEmpty(this.txt_Name.Text) && this.fileNames != null && !string.IsNullOrEmpty(this.txt_SaveFile.Text))
+                return true;
+            return false;
+        }
         private enum list_TimeType
         {
             giờ,
